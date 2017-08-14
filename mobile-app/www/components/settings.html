@@ -1,0 +1,13 @@
+<settings>
+	
+	<script>
+		sendSampleNotification(){
+			var localNotification = {
+			        id: 100,
+			        title: 'GUI Anomaly',
+			        text: 'There is only 10% likelihood of you finding a seat today.'
+			      }
+	      cordova.plugins.notification.local.schedule(localNotification);
+		}
+	</script>
+</settings>
