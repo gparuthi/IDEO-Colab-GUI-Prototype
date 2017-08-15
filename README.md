@@ -35,6 +35,8 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 1. Install Tensorflow ([link](https://www.tensorflow.org/install/)) and the requirements for object detection ([link](https://github.com/tensorflow/models/tree/master/object_detection)) 
 2. Setup a new Firebase project. Install Firebase-cli.
 3. Install Cordova-cli
+4. Clone models [models](https://github.com/tensorflow/models)
+5. Clone this repository and copy the tensorflow/object_detection_with_firebase_input.py into models/object_detection
 
 ## Configuration
 1. Set firebase database and storage rules to allow all requests.
@@ -44,6 +46,6 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 	- Camera app web/public/camera/index.html
 	- Tensorflow tensorflow/x.py
 2. Edit the mobile app to use your Google Maps, Dark Sky, and MBTA API tokens
-3. 
+
 
 
