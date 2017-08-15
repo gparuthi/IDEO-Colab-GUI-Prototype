@@ -339,10 +339,10 @@ def get_objects_Detected(TEST_IMAGE_PATHS):
 import pyrebase
 
 config = {
-  "apiKey": "AIzaSyCve60ZK9fQWaS-a0NGlKxk5ThpczAqNb0",
-  "authDomain": "airpressure-dffa0.firebaseapp.com",
-  "databaseURL": "https://airpressure-dffa0.firebaseio.com",
-  "storageBucket": "airpressure-dffa0.appspot.com"
+  "apiKey": "AIzaSyBWSIPoCW8S65ASd2z_cwTjHleR8SqFXmY",
+  "authDomain": "gui-blueprint.firebaseapp.com",
+  "databaseURL": "https://gui-blueprint.firebaseio.com",
+  "storageBucket": "gui-blueprint.appspot.com"
 }
 
 firebase = pyrebase.initialize_app(config)

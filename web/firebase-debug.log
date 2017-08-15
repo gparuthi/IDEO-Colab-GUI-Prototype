@@ -1,0 +1,28 @@
+[debug] [2017-08-15T15:11:04.272Z] ----------------------------------------------------------------------
+[debug] [2017-08-15T15:11:04.274Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-15T15:11:04.275Z] CLI Version:   3.9.2
+[debug] [2017-08-15T15:11:04.275Z] Platform:      darwin
+[debug] [2017-08-15T15:11:04.275Z] Node Version:  v6.11.0
+[debug] [2017-08-15T15:11:04.275Z] Time:          Tue Aug 15 2017 11:11:04 GMT-0400 (EDT)
+[debug] [2017-08-15T15:11:04.275Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-15T15:11:04.284Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-15T15:11:04.284Z] > authorizing via signed-in user
+[debug] [2017-08-15T15:11:04.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gui-blueprint  
+ Tue Aug 15 2017 11:11:04 GMT-0400 (EDT)
+[debug] [2017-08-15T15:11:05.159Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T15:11:05.165Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gui-blueprint/tokens  
+ Tue Aug 15 2017 11:11:05 GMT-0400 (EDT)
+[debug] [2017-08-15T15:11:05.838Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/gauravparuthi/Dropbox/IDEO-Colab-GUI-Prototype/web'...
+[info] 
+[debug] [2017-08-15T15:11:05.842Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gui-blueprint  
+ Tue Aug 15 2017 11:11:05 GMT-0400 (EDT)
+[debug] [2017-08-15T15:11:06.134Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T15:11:06.135Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411574430558/clients/_:getWebAppConfig  
+ Tue Aug 15 2017 11:11:06 GMT-0400 (EDT)
+[debug] [2017-08-15T15:11:06.453Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
