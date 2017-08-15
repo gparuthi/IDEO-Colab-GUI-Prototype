@@ -1,28 +1,36 @@
-[debug] [2017-08-15T15:11:04.272Z] ----------------------------------------------------------------------
-[debug] [2017-08-15T15:11:04.274Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-08-15T15:11:04.275Z] CLI Version:   3.9.2
-[debug] [2017-08-15T15:11:04.275Z] Platform:      darwin
-[debug] [2017-08-15T15:11:04.275Z] Node Version:  v6.11.0
-[debug] [2017-08-15T15:11:04.275Z] Time:          Tue Aug 15 2017 11:11:04 GMT-0400 (EDT)
-[debug] [2017-08-15T15:11:04.275Z] ----------------------------------------------------------------------
+[debug] [2017-08-15T18:24:10.201Z] ----------------------------------------------------------------------
+[debug] [2017-08-15T18:24:10.203Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-15T18:24:10.204Z] CLI Version:   3.9.2
+[debug] [2017-08-15T18:24:10.204Z] Platform:      darwin
+[debug] [2017-08-15T18:24:10.204Z] Node Version:  v6.11.0
+[debug] [2017-08-15T18:24:10.205Z] Time:          Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:10.205Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-08-15T15:11:04.284Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-08-15T15:11:04.284Z] > authorizing via signed-in user
-[debug] [2017-08-15T15:11:04.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gui-blueprint  
- Tue Aug 15 2017 11:11:04 GMT-0400 (EDT)
-[debug] [2017-08-15T15:11:05.159Z] <<< HTTP RESPONSE 200
-[debug] [2017-08-15T15:11:05.165Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gui-blueprint/tokens  
- Tue Aug 15 2017 11:11:05 GMT-0400 (EDT)
-[debug] [2017-08-15T15:11:05.838Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T18:24:10.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-15T18:24:10.225Z] > authorizing via signed-in user
+[debug] [2017-08-15T18:24:10.227Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-15T18:24:10.228Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/PiGW0pIMXH4MKZrYKMg1EVlmzj_GBrwrvgiNI4y-GYM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:10.423Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T18:24:10.434Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gui-blueprint  
+ Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:11.130Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T18:24:11.130Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gui-blueprint/tokens  
+ Tue Aug 15 2017 14:24:11 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:11.641Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/gauravparuthi/Dropbox/IDEO-Colab-GUI-Prototype/web'...
 [info] 
-[debug] [2017-08-15T15:11:05.842Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gui-blueprint  
- Tue Aug 15 2017 11:11:05 GMT-0400 (EDT)
-[debug] [2017-08-15T15:11:06.134Z] <<< HTTP RESPONSE 200
-[debug] [2017-08-15T15:11:06.135Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411574430558/clients/_:getWebAppConfig  
- Tue Aug 15 2017 11:11:06 GMT-0400 (EDT)
-[debug] [2017-08-15T15:11:06.453Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T18:24:11.644Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gui-blueprint  
+ Tue Aug 15 2017 14:24:11 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:12.049Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-15T18:24:12.050Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411574430558/clients/_:getWebAppConfig  
+ Tue Aug 15 2017 14:24:12 GMT-0400 (EDT)
+[debug] [2017-08-15T18:24:12.460Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 

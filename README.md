@@ -32,20 +32,23 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 	- To manually trigger anomalies on the webapp
 
 ## Installation
-1. Install Tensorflow ([link](https://www.tensorflow.org/install/)) and the requirements for object detection ([link](https://github.com/tensorflow/models/tree/master/object_detection)) 
-2. Setup a new Firebase project. Install Firebase-cli.
-3. Install Cordova-cli
-4. Clone models [models](https://github.com/tensorflow/models)
-5. Clone this repository and copy the tensorflow/object_detection_with_firebase_input.py into models/object_detection
+1. Install Tensorflow ((link)[https://www.tensorflow.org/install/]) and the requirements for object detection ([link](https://github.com/tensorflow/models/tree/master/object_detection)) 
+2. Setup a new Firebase project. Install [Firebase-CLI](https://firebase.google.com/docs/cli/).
+3. Install Cordova-CLI version 6.5: `npm install cordova@6.5.0 -g`
+4. Clone tensorflow [models](https://github.com/tensorflow/models) 
+    This contains the object recognition
+5. Clone this repository
 
-## Configuration
+
+## Setup Process
 1. Set firebase database and storage rules to allow all requests.
+1b. [Allow CORS requests on Firebase](https://stackoverflow.com/questions/37760695/firebase-storage-and-access-control-allow-origin)
 2. Edit these files to use your firebase tokens
-	- mobile-app mobile-app/www/index.html
-	- Dashboard web/public/midpoint/index.html
-	- Camera app web/public/camera/index.html
-	- Tensorflow tensorflow/x.py
-2. Edit the mobile app to use your Google Maps, Dark Sky, and MBTA API tokens
-
+	- mobile-app `mobile-app/www/index.html`
+	- Dashboard `web/public/midpoint/index.html`
+	- Camera app `web/public/camera/index.html`
+	- Tensorflow `tensorflow/object_detection_with_firebase_input.py.py`
+3. Edit the mobile app to use your Google Maps, Dark Sky, and MBTA API tokens
+4. Copy the `tensorflow/object_detection_with_firebase_input.py` from this repository into `models/object_detection`
 
 

@@ -103,7 +103,7 @@
               //   if (s.s.transit.line.name.includes("Green")){
               //     route = "Green"
               //   }
-              $.getJSON("https://realtime.mbta.com/developer/api/v2/alertsbyroute?api_key=wX9NwuHnZU2ToO7GmGR9uw&route="+route+"&include_access_alerts=true&include_service_alerts=true&format=json", function(d){
+              $.getJSON("https://realtime.mbta.com/developer/api/v2/alertsbyroute?api_key="+MBTA_API_KEY+"&route="+route+"&include_access_alerts=true&include_service_alerts=true&format=json", function(d){
                   console.log(d)
                   s.alerts = d.alerts
                   _.each(s.alerts, a =>{ 

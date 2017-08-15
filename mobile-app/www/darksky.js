@@ -3,7 +3,7 @@ class DarkSky {
         this.long = null;
         this.lat = null;
         this.t = null;
-        this.token = "2806eba02382628d5281fe73155cbc7c"
+        this.token = DARKSKY_TOKEN
         this.query = {}
     }
 

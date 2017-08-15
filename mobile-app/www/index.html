@@ -53,9 +53,9 @@
 <script src="js/libraries/route.min.js"></script>
 <script src="js/libraries/moment.js"></script>
 <!-- <script src="js/libraries/offline.min.js"></script> -->
-<script src="./darksky.js"></script>
+
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoetbDljhMLKVLnIWv75s2gi7Pg0glthY&libraries=places"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.7.0/jquery.geocomplete.min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -102,7 +102,14 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoetbDljhMLKVLnIWv75s2gi7Pg0glthY&libraries=places"></script>
 <script>
+
+  // Init keys
+  MBTA_API_KEY = "wX9NwuHnZU2ToO7GmGR9uw";
+  DARKSKY_TOKEN = "2806eba02382628d5281fe73155cbc7c";
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBWSIPoCW8S65ASd2z_cwTjHleR8SqFXmY",
@@ -114,6 +121,7 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="./darksky.js"></script>
 	
 </body>
 
