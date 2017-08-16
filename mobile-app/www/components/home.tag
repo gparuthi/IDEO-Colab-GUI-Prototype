@@ -2,35 +2,6 @@
 <!-- Simple header with fixed tabs. -->
 <div class="container">
 
-  <div class="mdl-grid">
-    <!-- <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
-      <img src="images/gui_cc.png">
-      <hr>
-    </div> -->
-    <div class="mdl-grid">
-      
-      <div class="mdl-cell mdl-cell--3-col">
-        <geocompleteinput ref="fromInput" fid="from" value="Kendall Square, Cambridge, MA, United State"></geocompleteinput>
-      </div>
-      
-      <div class="mdl-cell mdl-cell--3-col">
-        <geocompleteinput ref="toInput" fid="to" value="IDEO Boston" label="from"></geocompleteinput>
-      </div>
-     <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
-      <button class="mdl-button mdl-js-button" id="Start" onclick={startClick} ><span>Start</span></button>
-    </div>
-    <div class="mdl-cell mdl-cell--12-col">
-
-      <directions ref="directions">
-      </directions>
-    </div>
-
-    </div>
-   
-    
-
-
-  </div>
 </div>
 
 <script>
@@ -105,7 +76,8 @@
       self.showcrowd = false
     }
 
-    self.refs.directions.updateLegs()
+    // self.refs.directions.updateLegs()
+    appTag.trigger('stateChanged')
   }
 
   removeState(state){
@@ -119,9 +91,9 @@
 
   startClick(){
       self.steps=[]
-      self.from = self.refs.fromInput.value
-      self.to = self.refs.toInput.value
-      self.refs.directions.calcRoute(self.from, self.to)
+      // self.from = self.refs.fromInput.value
+      // self.to = self.refs.toInput.value
+      // self.refs.directions.calcRoute(self.from, self.to)
     }
 </script>
 

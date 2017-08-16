@@ -17,19 +17,19 @@
 
   <script>
     state1Click(){
-      firebase.database().ref('guiappremote/state/').set({state: ['bus']})
+      firebase.database().ref('guiappremote/state/').set({state: 'bus'})
     }
     state2Click(){
-      firebase.database().ref('guiappremote/state/').set({state: ['rain']})
+      firebase.database().ref('guiappremote/state/').set({state: 'rain'})
     }
     state3Click(){
-      firebase.database().ref('guiappremote/state/').set({state: ['crowd']})
+      firebase.database().ref('guiappremote/state/').set({state: 'crowd'})
     }
     allClick(){
-      firebase.database().ref('guiappremote/state/').set({state: ['bus', 'crowd', 'rain']})
+      firebase.database().ref('guiappremote/state/').set({state: 'bus'})
     }
     noneClick(){
-      firebase.database().ref('guiappremote/state/').set({state: ['']})
+      firebase.database().ref('guiappremote/state/').set({state: 'none'})
     }
 
 

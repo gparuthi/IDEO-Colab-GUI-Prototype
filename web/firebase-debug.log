@@ -1,36 +1,36 @@
-[debug] [2017-08-15T18:24:10.201Z] ----------------------------------------------------------------------
-[debug] [2017-08-15T18:24:10.203Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-08-15T18:24:10.204Z] CLI Version:   3.9.2
-[debug] [2017-08-15T18:24:10.204Z] Platform:      darwin
-[debug] [2017-08-15T18:24:10.204Z] Node Version:  v6.11.0
-[debug] [2017-08-15T18:24:10.205Z] Time:          Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:10.205Z] ----------------------------------------------------------------------
+[debug] [2017-08-16T19:38:28.730Z] ----------------------------------------------------------------------
+[debug] [2017-08-16T19:38:28.733Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-16T19:38:28.734Z] CLI Version:   3.9.2
+[debug] [2017-08-16T19:38:28.734Z] Platform:      darwin
+[debug] [2017-08-16T19:38:28.734Z] Node Version:  v6.11.0
+[debug] [2017-08-16T19:38:28.735Z] Time:          Wed Aug 16 2017 15:38:28 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:28.735Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-08-15T18:24:10.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-08-15T18:24:10.225Z] > authorizing via signed-in user
-[debug] [2017-08-15T18:24:10.227Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-08-15T18:24:10.228Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/PiGW0pIMXH4MKZrYKMg1EVlmzj_GBrwrvgiNI4y-GYM',
+[debug] [2017-08-16T19:38:28.752Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-16T19:38:28.752Z] > authorizing via signed-in user
+[debug] [2017-08-16T19:38:28.754Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-16T19:38:28.754Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/PiGW0pIMXH4MKZrYKMg1EVlmzj_GBrwrvgiNI4y-GYM',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:10.423Z] <<< HTTP RESPONSE 200
-[debug] [2017-08-15T18:24:10.434Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gui-blueprint  
- Tue Aug 15 2017 14:24:10 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:11.130Z] <<< HTTP RESPONSE 200
-[debug] [2017-08-15T18:24:11.130Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gui-blueprint/tokens  
- Tue Aug 15 2017 14:24:11 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:11.641Z] <<< HTTP RESPONSE 200
+ Wed Aug 16 2017 15:38:28 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:28.966Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-16T19:38:28.982Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gui-blueprint  
+ Wed Aug 16 2017 15:38:28 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:29.753Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-16T19:38:29.753Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gui-blueprint/tokens  
+ Wed Aug 16 2017 15:38:29 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:30.762Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/gauravparuthi/Dropbox/IDEO-Colab-GUI-Prototype/web'...
 [info] 
-[debug] [2017-08-15T18:24:11.644Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gui-blueprint  
- Tue Aug 15 2017 14:24:11 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:12.049Z] <<< HTTP RESPONSE 200
-[debug] [2017-08-15T18:24:12.050Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411574430558/clients/_:getWebAppConfig  
- Tue Aug 15 2017 14:24:12 GMT-0400 (EDT)
-[debug] [2017-08-15T18:24:12.460Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-16T19:38:30.765Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gui-blueprint  
+ Wed Aug 16 2017 15:38:30 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:31.308Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-16T19:38:31.309Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/411574430558/clients/_:getWebAppConfig  
+ Wed Aug 16 2017 15:38:31 GMT-0400 (EDT)
+[debug] [2017-08-16T19:38:31.801Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 

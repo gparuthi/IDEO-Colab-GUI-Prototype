@@ -1,32 +1,54 @@
+<screen>
+  <div>
+    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/asset_1.png" width="100%" height="100%">
+    <img if={selectedState === "rain"} onclick={clickRain} src="images/app/asset_2.png" width="100%" height="100%">
+    <img if={selectedState === "crowd"} onclick={clickCrowd} src="images/app/asset_3.png" width="100%" height="100%">
+    <img if={selectedState === "all"} src="images/app/situ-screen.png" width="100%" height="100%">
+
+    <img if={selectedState === "none"} src="images/app/situ-screen.png" width="100%" height="100%">
+    <img if={selectedState === "situ2"} src="images/app/situ-screen2.png" width="100%" height="100%">
+    <img if={selectedState === "situ3"} src="images/app/situ-screen3.png" width="100%" height="100%">
+  </div>
+
+  <script>
+    var self=this
+    screenTag = this
+
+    self.selectedState = "state1"
+
+    changeState(stateId){
+      self.selectedState = stateId
+      self.update()
+    }
+
+    appTag.on("stateChanged",()=>{
+      console.log("state is changed to " + homeTag.state)
+      self.selectedState = homeTag.state
+      self.update()
+    });
+    clickBus(){
+      mbtadialog.showModal("12:30p")
+    }
+    clickRain(){
+      raindialogTag.showModal("12:30p")
+    }
+    clickCrowd(){
+      visiondialogTag.showModal("12:30p")
+    }
+  </script>
+</screen>
+
 
 <app>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
-  <header class="mdl-layout__header">
-    
-    <!-- Tabs -->
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect ">
-      <a href={"#"+id} onclick={click} each={data} class={mdl-layout__tab:true, is-active:is_active}>{title}</a>
-    </div>
-  </header>
-  
-  <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active"  id="home">
-      <div class="page-content" hide={page.id != "home"}>
+
+        <screen></screen>
         <crowddetails></crowddetails>
         <raindetails></raindetails>
         <mbtadetails></mbtadetails>
         <home showeventlabels=true loadfrom="home"></home>
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel is-active"  id="settings">
-      <div class="page-content" hide={page.id != "settings"}>
-        <settings showeventlabels=true loadfrom="settings"></settings>
-      </div>
-    </section>
-  </main>
-
 
 </div>
   <script>
