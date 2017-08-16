@@ -6,10 +6,6 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 
 ![image](https://s17.postimg.org/vomrja2kb/control-center.png) ![image](https://s17.postimg.org/ag931uo3f/phone-1.png) ![image](https://s17.postimg.org/jpb9bywzf/phone-2.png)
 
-
-
-
-
 ## What is this?
 
 1. Mobile App (Cordova)
@@ -57,3 +53,5 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 4. Copy the `tensorflow/object_detection_with_firebase_input.py` from this repository into `models/object_detection`
 
 
+## Team
+Gaurav Paruthi, Carlos Armada, Joanne Cheung, Parker Woodworth, Shuya Gong, Gian Pangaro
