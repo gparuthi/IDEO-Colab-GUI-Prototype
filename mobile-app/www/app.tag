@@ -1,12 +1,12 @@
 <screen>
   <div>
     <img if={selectedState === "bus"} onclick={clickBus} src="images/app/asset_1.png" width="100%" height="100%">
-    <img if={selectedState === "rain"} onclick={clickRain} src="images/app/asset_2.png" width="100%" height="100%">
+    <img if={selectedState === "weather"} onclick={clickRain} src="images/app/asset_2.png" width="100%" height="100%">
     <img if={selectedState === "crowd"} onclick={clickCrowd} src="images/app/asset_3.png" width="100%" height="100%">
     <img if={selectedState === "all"} src="images/app/situ-screen.png" width="100%" height="100%">
 
     <img if={selectedState === "none"} src="images/app/situ-screen.png" width="100%" height="100%">
-    <img if={selectedState === "situ2"} src="images/app/situ-screen2.png" width="100%" height="100%">
+    <img if={selectedState === "busandweather"} src="images/app/situ-screen2.png" width="100%" height="100%">
     <img if={selectedState === "situ3"} src="images/app/situ-screen3.png" width="100%" height="100%">
   </div>
 
