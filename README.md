@@ -4,6 +4,12 @@ GUI
 Prototype for SmartCity Project about detecting anomalies in people's commute to reduce uncertainty. We used computer vision and other APIs to notify users at the right time. For example, when there are too many people at the subway station and trains are too crowded, we may alert a user who might be thinking about taking the subway. This way users can think about alternative ways like taking an Uber or bike.
 
 
+![image](https://s17.postimg.org/vomrja2kb/control-center.png) ![image](https://s17.postimg.org/ag931uo3f/phone-1.png) ![image](https://s17.postimg.org/jpb9bywzf/phone-2.png)
+
+
+
+
+
 ## What is this?
 
 1. Mobile App (Cordova)
