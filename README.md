@@ -32,7 +32,7 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 	- To manually trigger anomalies on the webapp
 
 ## Installation
-1. Install Tensorflow ((link)[https://www.tensorflow.org/install/]) and the requirements for object detection ([link](https://github.com/tensorflow/models/tree/master/object_detection)) 
+1. Install Tensorflow ([link](https://www.tensorflow.org/install/)) and the requirements for object detection ([link](https://github.com/tensorflow/models/tree/master/object_detection)) 
 2. Setup a new Firebase project. Install [Firebase-CLI](https://firebase.google.com/docs/cli/).
 3. Install Cordova-CLI version 6.5: `npm install cordova@6.5.0 -g`
 4. Clone tensorflow [models](https://github.com/tensorflow/models) 
@@ -41,8 +41,7 @@ Prototype for SmartCity Project about detecting anomalies in people's commute to
 
 
 ## Setup Process
-1. Set firebase database and storage rules to allow all requests.
-1b. [Allow CORS requests on Firebase](https://stackoverflow.com/questions/37760695/firebase-storage-and-access-control-allow-origin)
+1. Set firebase database and storage rules to allow all requests. Then [allow CORS requests on Firebase](https://stackoverflow.com/questions/37760695/firebase-storage-and-access-control-allow-origin)
 2. Edit these files to use your firebase tokens
 	- mobile-app `mobile-app/www/index.html`
 	- Dashboard `web/public/midpoint/index.html`
