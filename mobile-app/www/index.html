@@ -76,8 +76,6 @@
   	riot.mixin(OptsMixin)
   	document.addEventListener('deviceready', function(){
   		cordova.plugins.backgroundMode.enable()
-  		if (codePush)
-  		  codePush.sync(null, { updateDialog: false, installMode: InstallMode.IMMEDIATE });
   	}, false);
   	riot.mount('app')
   	route.start(true)

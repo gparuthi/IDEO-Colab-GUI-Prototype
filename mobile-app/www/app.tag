@@ -1,6 +1,6 @@
 <screen>
   <div>
-    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/asset_1.png" width="100%" height="100%">
+    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/crowd_SVG.svg" width="100%" height="100%">
     <img if={selectedState === "weather"} onclick={clickRain} src="images/app/asset_2.png" width="100%" height="100%">
     <img if={selectedState === "crowd"} onclick={clickCrowd} src="images/app/asset_3.png" width="100%" height="100%">
     <img if={selectedState === "all"} src="images/app/situ-screen.png" width="100%" height="100%">

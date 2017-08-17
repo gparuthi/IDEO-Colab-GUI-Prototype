@@ -25,7 +25,7 @@
     if (!state)
       return
     self.state = state
-    if (state.includes('rain')){
+    if (state.includes('weather')){
       // show rain anomaly true
       if (!self.showrain){
       self.showrain = true
