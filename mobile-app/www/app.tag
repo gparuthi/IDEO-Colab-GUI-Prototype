@@ -1,13 +1,15 @@
 <screen>
   <div>
+
     <img usemap="#imagemap" if={selectedState === "bus"} onclick={clickBus} src="images/app/Transit.svg">
     <img usemap="#imagemap" if={selectedState === "weather"} onclick={clickWeather} src="images/app/Weather.svg">
-    <img usemap="#imagemap" if={selectedState === "crowd" || selectedState==='noneandcrowd'} onclick={clickCrowd} src="images/app/crowd_SVG.svg">
+    <img usemap="#imagemap" if={selectedState === "crowd" || selectedState.includes('andcrowd')} onclick={clickCrowd} src="images/app/crowd_SVG.svg">
     <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd_transit.svg">
-    <img if={selectedState === "none"} src="images/app/None.svg">
+    
     <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("weather")} src="images/app/weather_transit.svg">
     <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("crowd")} src="images/app/crowd_transit.svg">
     <img usemap="#imagemap" if={selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd.svg">
+    <img if={selectedState.includes("none")} src="images/app/None.svg">
 
     <map name="imagemap">
       <area shape="rect" coords="230,174,330,250" href="javascript:screenTag.clickWeather()" alt="Rain">

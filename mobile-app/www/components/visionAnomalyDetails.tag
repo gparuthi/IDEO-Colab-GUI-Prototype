@@ -46,10 +46,12 @@
         let objectCounts = _.values(d.val())[0].objects
         console.log(objectCounts)
         if (objectCounts)
-          if (objectCounts.person)  
+         { if (objectCounts.person != undefined)  
             self.currentPersonCount = objectCounts.person
           else 
             self.currentPersonCount = 0
+        } else 
+          self.currentPersonCount = 0
         
 
         if (self.currentPersonCount>=self.threshold)

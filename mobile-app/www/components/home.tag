@@ -81,9 +81,10 @@
   }
 
   removeState(state){
+    console.log(state)
     if (state && self.state.includes(state))
-      self.state.replace(state, '')
-
+      self.state = self.state.replace(state, '')
+    appTag.trigger('stateChanged')
   }
 
   addState(state){
