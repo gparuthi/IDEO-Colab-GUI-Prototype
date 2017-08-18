@@ -1,13 +1,13 @@
 <screen>
   <div>
-    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/crowd_SVG.svg" width="100%" height="100%">
-    <img if={selectedState === "weather"} onclick={clickRain} src="images/app/asset_2.png" width="100%" height="100%">
-    <img if={selectedState === "crowd"} onclick={clickCrowd} src="images/app/asset_3.png" width="100%" height="100%">
-    <img if={selectedState === "all"} src="images/app/situ-screen.png" width="100%" height="100%">
-
-    <img if={selectedState === "none"} src="images/app/situ-screen.png" width="100%" height="100%">
-    <img if={selectedState === "busandweather"} src="images/app/situ-screen2.png" width="100%" height="100%">
-    <img if={selectedState === "situ3"} src="images/app/situ-screen3.png" width="100%" height="100%">
+    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/Transit.svg">
+    <img if={selectedState === "weather"} onclick={clickRain} src="images/app/Weather.svg">
+    <img if={selectedState === "crowd" || selectedState==='noneandcrowd'} onclick={clickCrowd} src="images/app/crowd_SVG.svg">
+    <img if={selectedState.includes("bus") && selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd_transit.svg">
+    <img if={selectedState === "none"} src="images/app/None.svg">
+    <img if={selectedState.includes("bus") && selectedState.includes("weather")} src="images/app/weather_transit.svg">
+    <img if={selectedState.includes("bus") && selectedState.includes("crowd")} src="images/app/crowd_transit.svg">
+    <img if={selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd.svg">
   </div>
 
   <script>
@@ -36,6 +36,12 @@
       visiondialogTag.showModal("12:30p")
     }
   </script>
+  <style>
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </screen>
 
 

@@ -19,7 +19,7 @@
   visiondialogTag = this
   self.time = "3:25 pm"
   self.currentPersonCount = 0
-  self.threshold = 3
+  self.threshold = 1
 
   self.fid = "crowddialog"
   self.data = [ 2  ,  2.86,  2.22,  1.43,  0.6,  0.72,  0.58,  0.51,  0.21,
@@ -59,11 +59,13 @@
           homeTag.removeState('crowd')
         }
 
-        self.loadChart()
+        // self.loadChart()
         
       })
 
     })
+
+
 
     showAlternativesClick(){
       window.open("transit://directions?from="+homeTag.from+"&to="+homeTag.to, "_system")

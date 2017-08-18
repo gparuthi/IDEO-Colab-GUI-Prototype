@@ -81,11 +81,18 @@
   }
 
   removeState(state){
-    self.setState(_.without(self.state, state))
+    if (state && self.state.includes(state))
+      self.state.replace(state, '')
+
   }
 
   addState(state){
-    self.state.push(state)
+    console.log("Adding state", state)
+
+    if (state && !self.state.includes(state))
+      self.state = self.state.concat("and", state)
+
+    // self.state.push(state)
     self.setState(self.state)
   }
 
