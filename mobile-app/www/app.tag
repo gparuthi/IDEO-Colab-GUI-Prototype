@@ -1,13 +1,22 @@
 <screen>
   <div>
-    <img if={selectedState === "bus"} onclick={clickBus} src="images/app/Transit.svg">
-    <img if={selectedState === "weather"} onclick={clickRain} src="images/app/Weather.svg">
-    <img if={selectedState === "crowd" || selectedState==='noneandcrowd'} onclick={clickCrowd} src="images/app/crowd_SVG.svg">
-    <img if={selectedState.includes("bus") && selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd_transit.svg">
+    <img usemap="#imagemap" if={selectedState === "bus"} onclick={clickBus} src="images/app/Transit.svg">
+    <img usemap="#imagemap" if={selectedState === "weather"} onclick={clickWeather} src="images/app/Weather.svg">
+    <img usemap="#imagemap" if={selectedState === "crowd" || selectedState==='noneandcrowd'} onclick={clickCrowd} src="images/app/crowd_SVG.svg">
+    <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd_transit.svg">
     <img if={selectedState === "none"} src="images/app/None.svg">
-    <img if={selectedState.includes("bus") && selectedState.includes("weather")} src="images/app/weather_transit.svg">
-    <img if={selectedState.includes("bus") && selectedState.includes("crowd")} src="images/app/crowd_transit.svg">
-    <img if={selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd.svg">
+    <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("weather")} src="images/app/weather_transit.svg">
+    <img usemap="#imagemap" if={selectedState.includes("bus") && selectedState.includes("crowd")} src="images/app/crowd_transit.svg">
+    <img usemap="#imagemap" if={selectedState.includes("weather") && selectedState.includes("crowd")} src="images/app/weather_crowd.svg">
+
+    <map name="imagemap">
+      <area shape="rect" coords="230,174,330,250" href="javascript:screenTag.clickWeather()" alt="Rain">
+      <area shape="rect" coords="230,254,330,330" href="javascript:screenTag.clickBus()" alt="bus">
+      <area shape="rect" coords="230,390,330,450" href="javascript:screenTag.clickCrowd()" alt="crowd">
+      <area shape="rect" coords="230,540,330,620" href="javascript:screenTag.clickWeather()" alt="Rain">
+    </map>
+
+
   </div>
 
   <script>
@@ -15,6 +24,8 @@
     screenTag = this
 
     self.selectedState = "state1"
+
+
 
     changeState(stateId){
       self.selectedState = stateId
@@ -29,7 +40,7 @@
     clickBus(){
       mbtadialog.showModal("12:30p")
     }
-    clickRain(){
+    clickWeather(){
       raindialogTag.showModal("12:30p")
     }
     clickCrowd(){

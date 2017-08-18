@@ -34,6 +34,22 @@
         dialog.close();
       });
 
+      forecast
+        .latitude('37.7927728')            
+        .longitude('-122.4098469')          
+        .time(moment().format())             
+        .units('ca')                    
+        .language('en')                 
+        .exclude('minutely,daily')      
+        .extendHourly(true)             
+        .get()                          
+        .then(res => {         
+            self.update()
+        })
+        .catch(err => {                 
+            console.log(err)
+        })
+
     })
 
     showAlternativesClick(){

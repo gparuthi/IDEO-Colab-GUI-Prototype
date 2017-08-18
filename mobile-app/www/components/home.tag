@@ -7,7 +7,7 @@
 <script>
   var self = this
   homeTag = self
-  self.state = []
+  self.state = ''
 
   this.on("mount", function(){
       self.listenToFirebaseRemote()
@@ -91,9 +91,9 @@
 
     if (state && !self.state.includes(state))
       self.state = self.state.concat("and", state)
-
+    appTag.trigger('stateChanged')
     // self.state.push(state)
-    self.setState(self.state)
+    // self.setState(self.state)
   }
 
   startClick(){
